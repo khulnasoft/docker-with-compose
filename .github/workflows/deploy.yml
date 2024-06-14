@@ -17,7 +17,7 @@ jobs:
         run: bash scripts/build-push.sh
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-          DOCKER_TOKEN: ${{ secrets.DOCKER_TOKEN }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_TOKEN }}
       - name: Docker Hub Description
         uses: peter-evans/dockerhub-description@v3
         with:
