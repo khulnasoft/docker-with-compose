@@ -2,7 +2,7 @@
 
 set -e
 
-basename="khulnasoft/docker-with-compose"
+basename="tiangolo/docker-with-compose"
 latest_tag="${basename}:latest"
 
 docker build -t "$latest_tag" .
